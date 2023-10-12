@@ -1,9 +1,10 @@
 import express from "express";
 import axios from "axios";
 import * as cheerio from "cheerio";
+import cors from 'cors';
 const app = express();
 
-
+app.use(cors());
 // routes ?\
 app.get('/A', async (req, res) => {
   try {
