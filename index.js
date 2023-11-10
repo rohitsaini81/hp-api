@@ -3,6 +3,8 @@ import axios from "axios";
 import * as cheerio from "cheerio";
 import cors from 'cors';
 const app = express();
+import dotenv from 'dotenv';
+dotenv.config();
 
 app.use(cors());
 // routes ?\
@@ -85,4 +87,4 @@ app.get('/B', async (req, res) => {
 
 
 app.get('/*', (req, res) => res.send("Page not found"));
-app.listen(3000, () => console.log("Server on http://127.0.0.1:3000"));
+app.listen(process.env.PORT || 3000, () => console.log("Server is running"));
