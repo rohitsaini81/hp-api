@@ -16,6 +16,6 @@
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.18.2",
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0"  // Added dotenv as a dependency
+    "dotenv": "^10.0.0"
   }
 }
